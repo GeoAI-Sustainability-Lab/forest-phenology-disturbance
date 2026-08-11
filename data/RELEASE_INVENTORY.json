@@ -1,0 +1,58 @@
+{
+  "dataset_version": "0.1.0",
+  "created_from": "frozen extracted feature and prediction artifacts",
+  "raw_imagery_included": false,
+  "original_event_polygons_included": false,
+  "feature_shards": [
+    {
+      "file": "data/features/temporal_samples_fold_0.npz",
+      "fold": 0,
+      "samples": 107520,
+      "bytes": 49569687
+    },
+    {
+      "file": "data/features/temporal_samples_fold_1.npz",
+      "fold": 1,
+      "samples": 107520,
+      "bytes": 49037858
+    },
+    {
+      "file": "data/features/temporal_samples_fold_2.npz",
+      "fold": 2,
+      "samples": 107520,
+      "bytes": 49863149
+    },
+    {
+      "file": "data/features/temporal_samples_fold_3.npz",
+      "fold": 3,
+      "samples": 96768,
+      "bytes": 44287368
+    },
+    {
+      "file": "data/features/temporal_samples_fold_4.npz",
+      "fold": 4,
+      "samples": 96768,
+      "bytes": 44861136
+    }
+  ],
+  "test_predictions": {
+    "file": "data/evaluation/normal_test_predictions.npz",
+    "samples": 147456,
+    "bytes": 30406504,
+    "methods": [
+      "last_observation",
+      "seasonal_median",
+      "validation_selected_physical",
+      "shared_residual_ssm",
+      "forest_conditioned_ssm",
+      "validation_selected_transformer",
+      "presto_frozen",
+      "validation_selected_gru",
+      "recent_season_gru",
+      "phenology_calibrated_gru"
+    ]
+  },
+  "normal_test_samples": 147456,
+  "all_temporal_samples": 516096,
+  "spatial_folds": 5
+}

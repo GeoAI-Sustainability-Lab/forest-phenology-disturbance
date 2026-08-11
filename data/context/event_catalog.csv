@@ -1,0 +1,6 @@
+window_id,event_code,event_name,area_ha,target_date,post_event_delay_days
+TRUTH_86cf4dc8ee75a8721b01407e,E1,Bailu 2019,0.5,2019-10-15,32
+TRUTH_78783eb3a69cd2af50c62e47,E2,0918 earthquake 2022,0.52,2022-10-15,24
+TRUTH_7b6c4e9e2c28ca5c5f3231c9,E3,Doksuri 2023,0.52,2023-10-15,76
+TRUTH_88a1d017e57ab72a4100b890,E4,Gaemi 2024,6.027,2024-10-15,74
+TRUTH_ebcd904a8adc1f395c190d2c,E5,Krathon 2024,0.507,2024-10-15,1

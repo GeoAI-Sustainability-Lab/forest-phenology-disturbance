@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or the derived benchmark data, please cite this repository."
+title: "Forest phenology disturbance forecasting with Sentinel-1/2"
+type: software
+version: 0.1.0
+date-released: 2026-08-11
+authors:
+  - family-names: Hsu
+    given-names: Yu-Chun
+    orcid: "https://orcid.org/0000-0002-6616-6906"
+    email: bigq@nchu.edu.tw
+repository-code: "https://github.com/GeoAI-Sustainability-Lab/forest-phenology-disturbance"
+license: MIT
+keywords:
+  - forest disturbance
+  - forest phenology
+  - Sentinel-1
+  - Sentinel-2
+  - time-series forecasting
+

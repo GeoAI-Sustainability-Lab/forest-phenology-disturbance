@@ -1,0 +1,57 @@
+{
+  "counts": {
+    "all_temporal_samples": 516096,
+    "normal_test_pixels": 147456,
+    "normal_test_groups": 1152,
+    "spatial_blocks": 43,
+    "history_supported_events": 5
+  },
+  "normal_h1": {
+    "seasonal_median": {
+      "mae": 0.012747,
+      "mape_percent": 13.256908,
+      "psnr_db": 34.407500,
+      "sam_degrees": 3.596412
+    },
+    "validation_selected_gru": {
+      "mae": 0.011969,
+      "mape_percent": 12.268132,
+      "psnr_db": 34.992866,
+      "sam_degrees": 3.396564
+    },
+    "recent_season_gru": {
+      "mae": 0.011856,
+      "mape_percent": 12.299182,
+      "psnr_db": 35.133848,
+      "sam_degrees": 3.360092
+    },
+    "phenology_calibrated_gru": {
+      "mae": 0.011747,
+      "mape_percent": 12.314737,
+      "psnr_db": 35.222316,
+      "sam_degrees": 3.338654
+    }
+  },
+  "phenology_gain_over_gru": {
+    "mae": 0.000222,
+    "sam_degrees": 0.057569
+  },
+  "event_means": {
+    "direct_pair": {
+      "auroc": 0.677029,
+      "auprc": 0.063610,
+      "topk_iou": 0.031385
+    },
+    "gru_h8": {
+      "auroc": 0.836352,
+      "auprc": 0.102819,
+      "topk_iou": 0.077983
+    },
+    "phenology_basis_gru": {
+      "auroc": 0.834865,
+      "auprc": 0.106257,
+      "topk_iou": 0.084887
+    }
+  }
+}
+
