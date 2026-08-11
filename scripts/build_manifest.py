@@ -10,6 +10,7 @@ EXCLUDED_PARTS = {
     ".pytest_cache",
     ".ruff_cache",
     "__pycache__",
+    "models",
     "outputs",
 }
 
@@ -31,7 +32,9 @@ def main() -> None:
         if any(part in EXCLUDED_PARTS or part.endswith(".egg-info") for part in relative.parts):
             continue
         rows.append(f"{digest(path)}  {relative.as_posix()}")
-    (ROOT / "MANIFEST.sha256").write_text("\n".join(rows) + "\n", encoding="utf-8")
+    (ROOT / "MANIFEST.sha256").write_text(
+        "\n".join(rows) + "\n", encoding="utf-8", newline="\n"
+    )
     print(f"Wrote {len(rows)} hashes")
 
 
